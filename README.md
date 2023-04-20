@@ -1,6 +1,6 @@
 # ETH Proof: Beginner Course(Final Assessment Project)
 
-Eth Proof: Beginner Course Project is creating a simple but useful program for NFTs, Minting and Burning of tokens
+Eth Proof: Beginner Course Project is creating a simple but useful program for Crypto Currency, NFTs, Minting and Burning of tokens
 
 ## Description
 
