@@ -1,4 +1,3 @@
-```javascript
 //SPDX-License-Identifier: MIT
         pragma solidity ^0.8.18;
 
@@ -15,12 +14,12 @@ contract Metacrafters{
                         Balances[Address] += Value;
                 }
 
-                function Burning (address Address, uint Value)public{
-                       while(Balances[Address] >= Value){
-                                TotalSupply -= Value;
-                                Balances[Address] -= Value;
-                            break;
+                function Burning (address Sender, uint Token)public{
+                       if(Balances[Sender] >= Token){
+                                TotalSupply -= Token;
+                                Balances[Sender] -= Token;
+                       }else{
+                       
                        }
                 }
          }
-```
