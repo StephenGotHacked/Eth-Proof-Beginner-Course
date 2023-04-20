@@ -9,7 +9,7 @@
 
                     mapping (address => uint) public Balances;
 
-                function Minting (address Sender, uint Tokens)public{
+                function Minting (address Sender, uint Token)public{
                         TotalSupply += Token;
                         Balances[Sender] += Token;
                 }
