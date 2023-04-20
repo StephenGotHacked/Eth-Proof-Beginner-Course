@@ -37,16 +37,17 @@ This program is a simple contract written in Solidity, a programming language us
 
                     mapping (address => uint) public Balances;
 
-                function Minting (address Address, uint Value)public{
-                        TotalSupply += Value;
-                        Balances[Address] += Value;
+                function Minting (address Sender, uint Tokens)public{
+                        TotalSupply += Token;
+                        Balances[Sender] += Token;
                 }
 
-                function Burning (address Address, uint Value)public{
-                       while(Balances[Address] >= Value){
-                                TotalSupply -= Value;
-                                Balances[Address] -= Value;
-                            break;
+                function Burning (address Sender, uint Token)public{
+                       if(Balances[Sender] >= Token){
+                                TotalSupply -= Token;
+                                Balances[Sender] -= Token;
+                       }else{
+                              
                        }
                 }
          }
