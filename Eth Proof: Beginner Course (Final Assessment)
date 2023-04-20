@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
-        pragma solidity ^0.8.18;
-
-contract Metacrafters{
+  pragma solidity ^0.8.18;
+        
+        contract Metacrafters{
 
             string public TokenName = "Coindino";
             string public TokenAbbrv = "COD";
@@ -9,9 +9,9 @@ contract Metacrafters{
 
                     mapping (address => uint) public Balances;
 
-                function Minting (address Address, uint Value)public{
-                        TotalSupply += Value;
-                        Balances[Address] += Value;
+                function Minting (address Sender, uint Tokens)public{
+                        TotalSupply += Token;
+                        Balances[Sender] += Token;
                 }
 
                 function Burning (address Sender, uint Token)public{
@@ -19,7 +19,7 @@ contract Metacrafters{
                                 TotalSupply -= Token;
                                 Balances[Sender] -= Token;
                        }else{
-                       
+                              
                        }
                 }
          }
