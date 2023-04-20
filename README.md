@@ -37,7 +37,7 @@ This program is a simple contract written in Solidity, a programming language us
 
                     mapping (address => uint) public Balances;
 
-                function Minting (address Sender, uint Tokens)public{
+                function Minting (address Sender, uint Token)public{
                         TotalSupply += Token;
                         Balances[Sender] += Token;
                 }
