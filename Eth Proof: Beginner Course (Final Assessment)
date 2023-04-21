@@ -7,7 +7,7 @@
             string public TokenAbbrv = "COD";
             uint public TotalSupply;
 
-                    mapping (address Address => uint) public Balances;
+                    mapping (address Address => uint Value) public Balances;
 
                 function Minting (address Sender, uint Token)public{
                         TotalSupply += Token;
